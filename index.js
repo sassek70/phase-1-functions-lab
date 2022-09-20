@@ -1,7 +1,17 @@
-function distanceFromHqInBlocks(someValue) {
-    const blocks = Math.abs(someValue - 42);
-    return blocks;
+// function distanceFromHqInBlocks(someValue) {
+//     const blocks = Math.abs(someValue - 42);
+//     return blocks;
+// }
+
+
+function distanceFromHqInBlocks(someValue){
+    if(someValue > 42){
+        return someValue - 42
+    } else {
+        return 42 - someValue
+    }
 }
+
 
 function distanceFromHqInFeet (someValue) {
     const feet = distanceFromHqInBlocks(someValue)
